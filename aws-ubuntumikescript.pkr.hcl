@@ -20,7 +20,7 @@ source "amazon-ebs" "linux" {
   ami_name      = "learn-packer-linux-aws-jenkins-test-eric-2"
   instance_type = "t2.micro"
   region        = "us-east-1"
-  source_ami    = "ami-0a7d7cedda5ffc1ce"
+  source_ami    = "ami-0feffd3727846f4a7"
   ssh_username  = "ec2-user"
 }
 
