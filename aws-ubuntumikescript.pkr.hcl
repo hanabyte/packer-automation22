@@ -17,7 +17,7 @@ packer {
 }
 
 source "amazon-ebs" "linux" {
-  ami_name      = "learn-packer-linux-aws-jenkins-test-3"
+  ami_name      = "learn-packer-linux-aws-jenkins-test-4"
   instance_type = "t2.micro"
   region        = "us-east-1"
   source_ami    = "ami-0d5915c5474e36ba0"
