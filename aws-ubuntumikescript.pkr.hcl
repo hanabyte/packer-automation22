@@ -17,15 +17,15 @@ packer {
 }
 
 source "amazon-ebs" "linux" {
-  ami_name      = "learn-packer-linux-aws-jenkins-test-2"
+  ami_name      = "learn-packer-linux-aws-jenkins-test-3"
   instance_type = "t2.micro"
   region        = "us-east-1"
-  source_ami    = "ami-0aff183913620c954"
+  source_ami    = "ami-0d5915c5474e36ba0"
   ssh_username  = "ec2-user"
 }
 
 build {
-  name    = "learn-packer-linux-aws-simon-test-23"
+  name    = "learn-packer-linux-aws-simon-test"
   sources = ["source.amazon-ebs.linux"]
 
   provisioner "shell" {
