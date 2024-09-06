@@ -31,7 +31,6 @@ build {
   provisioner "shell" {
     execute_command= "{{.Vars}} bash '{{.Path}}'"
     inline = [
-      "sudo yum install -y --nogpgcheck https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm",
       "sudo yum update",
       "sudo amazon-linux-extras install epel -y",
       "sudo yum install --enablerepo=epel ufw -y",
