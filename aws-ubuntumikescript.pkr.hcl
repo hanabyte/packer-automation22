@@ -17,10 +17,10 @@ packer {
 }
 
 source "amazon-ebs" "linux" {
-  ami_name      = "learn-packer-linux-aws-jenkins-test-5"
+  ami_name      = "learn-packer-linux-aws-jenkins-test-6"
   instance_type = "t2.micro"
   region        = "us-east-1"
-  source_ami    = "ami-0d5915c5474e36ba0"
+  source_ami    = "ami-08ec3e0965f618928"
   ssh_username  = "ec2-user"
 }
 
